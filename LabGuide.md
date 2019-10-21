@@ -150,10 +150,10 @@ $ git clone https://github.com/tianocore-training/PlatformBuildLab2_FW.git
 ```
    FW 
     - PlatformBuildLab
-       - asl				                    - Asl Compiler 
-       - FTDI-Driver		                    - Serial / USB cable 
-       - MaxWS                                  - Minnowboard Max Source 
-	   - TeraTerm                               - Terminal app
+       - asl         - Asl Compiler 
+       - FTDI-Driver - Serial / USB cable 
+       - MaxWS       - Minnowboard Max Source 
+	   - TeraTerm    - Terminal app
 ```
 
 
@@ -184,7 +184,7 @@ $ git clone https://github.com/tianocore-training/PlatformBuildLab2_FW.git
 <br>
 ./MaxWs/ <br>&nbsp;&nbsp;
 	edk2/<br>&nbsp;&nbsp;&nbsp;&nbsp;
-       <font face="Arial">@size[.8em](&lpar;EDK II common packages&rpar;)</font><br>&nbsp;&nbsp;&nbsp;&nbsp;
+       <font face="Arial">&lpar;EDK II common packages&rpar;)<br>&nbsp;&nbsp;&nbsp;&nbsp;
 		BaseTools/<br>&nbsp;&nbsp;
 	edk2-platforms/<br>&nbsp;&nbsp;&nbsp;&nbsp;
        Platform/Intel/<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -236,7 +236,7 @@ Note:
 
 ## Slide 21 @title[Setup the Build Environment]
 <p align="left"><span class="gold" > <b>Setup the Build Environment</b> 
-
+<br><font color="gray"> &#10103;</font>&nbsp;&nbsp;
 Run Setenv.bat or type the following: (assumes Python3.7.2 installed)
 
 ```
@@ -264,8 +264,9 @@ Python 3.7.2
 
 ## Slide 22 @title[Invoke Edksetup]
 <p align="left"><span class="gold" > <b>Invoke Edksetup</b> 
-
+<br><font color="gray"> &#10104;</font>&nbsp;&nbsp;
 Invoke Edksetup from edk2 directory
+
 ```
 $> cd edk2
 $> Edksetup Rebuild
@@ -296,7 +297,7 @@ There is also this capability that is part of the .dsc but many developers have 
 
 ## Slide 24 @title[Build Process for DEBUG]
 <p align="left"><span class="gold" > <b>Build Process for DEBUG Target</b> 
-
+<br><font color="gray"> &#10105;</font>&nbsp;&nbsp;
 
 - From the edk2 directory invoke the “build” command to build MinnowBoard Max
 - Note: Use the Your VS TAG below with “-t” option
@@ -307,8 +308,7 @@ There is also this capability that is part of the .dsc but many developers have 
 ```
 
 
-- Press Enter to 
-Continue the build
+### <b>NOTE: Press Enter to Continue the build<b>
 
 
 ## Slide 25 @title[Examine Command Line & Build Parameters]
@@ -385,6 +385,7 @@ many will have "ifdef" statements in the major .dsc file in order to enable a fe
 
 ## Slide 27 @title[Build Process for Release]
 <p align="left"><span class="gold" > <b>Build Process for RELEASE Target</b> 
+<br><font color="gray"> &#10105;</font>&nbsp;&nbsp;Release build
 
 - Note: Use the Your VS TAG below with “-t” option
 
@@ -420,7 +421,8 @@ the boot process and various ASSERT/TRACE errors
 
 
 ## Slide 29 @title[Build Process Completed]
-<p align="left"><span class="gold" > <b>Build Process Completed</b> 
+<p align="left"><span class="gold" > <b>Build Process Completed</b> </span></p>
+
 Locate the build .Cap images
 
 The platform post build process will create capsule images to use with a capsule update process<br>
@@ -435,7 +437,7 @@ for the the MinnnowBoard Capsule files are created to use withthe CapsuleApp.efi
 
 
 ## Slide 30 @title[Flash onto the MinnowBoard MAX]
-<p align="left"><span class="gold" > <b>Flashing the New Firmware</b> 
+<p align="left"><span class="gold" > <b>Flashing the New Firmware</b></span></p> 
 
 
 
@@ -450,7 +452,7 @@ for the the MinnnowBoard Capsule files are created to use withthe CapsuleApp.efi
 
 
 ## Slide 31 @title[Flash onto the MinnowBoard MAX 02]
-<p align="left"><span class="gold" > <b>Flashing the New Firmware</b> 
+<p align="left"><span class="gold" > <b>Flashing the New Firmware</b> </span></p>
 
 Run CapsuleApp.efi utility with MinnowMax. . . cap file
 (Note the “TAB” Key will fill out the command line for you )
@@ -462,7 +464,7 @@ System will start the Capsule update process
 There will be 2 reboots
 
 ## Slide 32 @title[Capsule Update with External Monitor]
-<p align="left"><span class="gold" > <b>Capsule Update with External Monitor</b> 
+<p align="left"><span class="gold" > <b>Capsule Update with External Monitor</b> </span></p>
 
 Logo with a progress bar will display update process progress
 
@@ -474,7 +476,7 @@ the monitor will show a progress bar for the capsule update
 
 
 ## Slide 33 @title[Verify after Firmware Update]
-<p align="left"><span class="gold" > <b>Verify After Firmware Update</b> 
+<p align="left"><span class="gold" > <b>Verify After Firmware Update</b> </span></p>
 
 Reboot and Verify
 
@@ -542,10 +544,8 @@ Copyright (c) 2019, Intel Corporation. All rights reserved.
 ---
 ## Slide 40 @title[Build Errors]
 <br>
-<br>
-<br>
-<br>
-##### <p align="left"<span class="gold"   >Build Errors</span></p><br>
+
+### Build Errors
 
 ---
 ## Slide 41 @title[Build Error- RC.exe ]
