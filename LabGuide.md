@@ -247,7 +247,7 @@ $> setenv.bat
  set PACKAGES_PATH=%WORKSPACE%\edk2;%WORKSPACE%\edk2-platforms\Silicon\Intel;%WORKSPACE%\edk2-platforms\Platform\Intel;%WORKSPACE%\edk2-non-osi\Silicon\Intel
 
  set EDK_TOOLS_PATH=%WORKSPACE%\edk2\BaseTools
- path=%path%;%WORKSPACE%\openssl;%USERPROFILE%\AppData\Local\Programs\Python\Python37-32
+ path=%WORKSPACE%\openssl;%USERPROFILE%\AppData\Local\Programs\Python\Python37-32;%path%
  set NASM_PREFIX=%WORKSPACE%\nasm\
 ```
 
@@ -308,11 +308,11 @@ There is also this capability that is part of the .dsc but many developers have 
 ```
 
 
-### <b>NOTE: Press Enter to Continue the build<b>
+### <b>NOTE: Press Enter to Continue the build</b>
 
 
 ## Slide 25 @title[Examine Command Line & Build Parameters]
-<p align="left"><span class="gold" > <b>Examine Build Parameters</b> 
+<p align="left"><span class="gold" > <b>Examine Build Parameters</b></span></p> 
 
 
 
@@ -355,7 +355,7 @@ There is also this capability that is part of the .dsc but many developers have 
 
 ---
 ## Slide 26 @title[Examine Platform Parameters]
-<p align="left"><span class="gold" > <b>Platform Build and PCD Parameters</b> 
+<p align="left"><span class="gold" > <b>Platform Build and PCD Parameters</b> </span></p>
 
 ### Platform Parameters<br>
 - Many Platform Parameters are defined in  a top .DSC file that controls  PCD and build switches
@@ -384,7 +384,7 @@ many will have "ifdef" statements in the major .dsc file in order to enable a fe
 
 
 ## Slide 27 @title[Build Process for Release]
-<p align="left"><span class="gold" > <b>Build Process for RELEASE Target</b> 
+<p align="left"><span class="gold" > <b>Build Process for RELEASE Target</b> </span></p>
 <br><font color="gray"> &#10105;</font>&nbsp;&nbsp;Release build
 
 - Note: Use the Your VS TAG below with “-t” option
