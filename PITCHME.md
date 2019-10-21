@@ -591,7 +591,7 @@ There is also this capability that is part of the .dsc but many developers have 
 From the edk2 directory invoke the "build" command to build MinnowBoard Max <br>@size[.8em](Note: Use the Your VS TAG below with "-t" option)
 </span></p>
 <p style="line-height:35%" align="left" ><span style="font-size:0.40em; font-family:Consolas;" >&nbsp;&nbsp;
-$&gt; build -a IA32 -a X64 -t @color[yellow](VS2015x86) -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc –y Vlv.report -v
+$&gt; build -a IA32 -a X64 -t @color[yellow](VS2015x86) -p Vlv2TbltDevicePkg\PlatformPkgX64.dsc -y Vlv.report -v
 </span></p>
 @snapend
 
